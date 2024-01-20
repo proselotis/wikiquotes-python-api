@@ -11,4 +11,5 @@ base_url = "https://ru.wikiquote.org/w/api.php"
     # Author and quote could have an accent
 #    return (quote, author)
 
-#non_quote_sections = ["sobre", "referencias"]
+#will need to update this
+non_quote_sections = ["sobre", "referencias"]
