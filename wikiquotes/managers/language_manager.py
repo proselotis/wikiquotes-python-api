@@ -3,6 +3,7 @@ import unidecode
 
 from ..languages import spanish
 from ..languages import english
+from ..languages import russian
 from . import custom_exceptions
 from . import python_version_manager
 
@@ -15,7 +16,8 @@ def from_string(raw_language):
     # Using espanol because special character replaces accents and ñ
     elif lowered == u"es" or lowered == u"spanish" or lowered == u"espanol":
         return spanish
-
+    elif lowered == u"ru" or lowered == u"russian":
+        return russian
     raise custom_exceptions.UnsupportedLanguageException()
 
 def transform_to_unicode(string):
